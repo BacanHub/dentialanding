@@ -60,31 +60,20 @@ export default function Home() {
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-teal-50">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Dental.IA</h1>
-                  <p className="text-xl text-muted-foreground">
-                    Plataforma de asistencia para odontólogos basada en IA que analiza imágenes panorámicas y ayuda en
-                    el diagnóstico.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+            <div className="flex flex-col items-center text-center justify-center">
+              <div className="max-w-3xl space-y-4">
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Dental.IA</h1>
+                <p className="text-xl text-muted-foreground">
+                  Plataforma de asistencia para odontólogos basada en IA que analiza imágenes panorámicas y ayuda en
+                  el diagnóstico.
+                </p>
+                <div className="flex flex-col gap-2 sm:flex-row justify-center pt-4">
                   <Link href="#como-funciona">
                     <Button size="lg" className="bg-teal-600 hover:bg-teal-700">
                       Conocer más
                     </Button>
                   </Link>
                 </div>
-              </div>
-              <div className="flex justify-center">
-                <img
-                  alt="Dental.IA en acción"
-                  className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-                  height="310"
-                  src={`${getBasePath()}/placeholder.jpg`}
-                  width="550"
-                />
               </div>
             </div>
           </div>
