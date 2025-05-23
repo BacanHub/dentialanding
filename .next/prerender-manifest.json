@@ -1,30 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/login": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/login",
-      "dataRoute": "/login.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/dashboard": {
       "experimentalBypassFor": [
         {
@@ -96,13 +72,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/login": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/login",
+      "dataRoute": "/login.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "3d77d68b0b237501f9fbd9fea01b9a53",
-    "previewModeSigningKey": "555dc989ad2756c7e9a3c27d77553239d51037856b95809a4f4b1666d504185e",
-    "previewModeEncryptionKey": "14f53717bb550eba764667e3e261fcd8dea16c2205fbe47dbcf076663245f54f"
+    "previewModeId": "0e015ad8c7c14879abedd1b31a464ce3",
+    "previewModeSigningKey": "0da2c87a90a6af595e66d0976f2435baceb065e0dc52386d159e0c880e651636",
+    "previewModeEncryptionKey": "63b3f786315dfb5b38c611098db882d93f0ae77549b3b648dc866a3727af85da"
   }
 }

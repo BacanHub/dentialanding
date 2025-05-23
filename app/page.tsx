@@ -4,6 +4,14 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Check, CheckCircle2 } from "lucide-react"
 
 export default function Home() {
+  // Función para determinar la ruta base de los recursos estáticos
+  const getBasePath = () => {
+    if (process.env.NODE_ENV === 'production') {
+      return '/dentialanding';
+    }
+    return '';
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -74,7 +82,7 @@ export default function Home() {
                   alt="Dental.IA en acción"
                   className="aspect-video overflow-hidden rounded-xl object-cover object-center"
                   height="310"
-                  src="/dental-image.jpg"
+                  src={`${getBasePath()}/placeholder.jpg`}
                   width="550"
                 />
               </div>
