@@ -45,14 +45,6 @@ export default function Home() {
               Contacto
             </Link>
           </nav>
-          <div className="flex items-center gap-4">
-            <Link href="/login">
-              <Button variant="outline">Iniciar Sesión</Button>
-            </Link>
-            <Link href="/register">
-              <Button>Registrarse</Button>
-            </Link>
-          </div>
         </div>
       </header>
 
@@ -70,13 +62,8 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="/register">
-                    <Button size="lg" className="bg-teal-600 hover:bg-teal-700">
-                      Comenzar ahora
-                    </Button>
-                  </Link>
                   <Link href="#como-funciona">
-                    <Button size="lg" variant="outline">
+                    <Button size="lg" className="bg-teal-600 hover:bg-teal-700">
                       Conocer más
                     </Button>
                   </Link>
@@ -356,16 +343,6 @@ export default function Home() {
                 <li>
                   <Link href="#planes" className="hover:text-teal-400">
                     Planes
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/login" className="hover:text-teal-400">
-                    Iniciar Sesión
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/register" className="hover:text-teal-400">
-                    Registrarse
                   </Link>
                 </li>
               </ul>
